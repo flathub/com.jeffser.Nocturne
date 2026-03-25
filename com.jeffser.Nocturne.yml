@@ -11,6 +11,8 @@ finish-args:
   - '--socket=wayland'
   - '--socket=pulseaudio'
   - '--filesystem=xdg-music:ro'
+cleanup:
+  - /share/man
 modules:
   - name: python3-requests
     buildsystem: simple
