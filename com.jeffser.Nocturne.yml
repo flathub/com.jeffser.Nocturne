@@ -11,16 +11,6 @@ finish-args:
   - '--socket=wayland'
   - '--socket=pulseaudio'
   - '--filesystem=xdg-music:ro'
-cleanup:
-  - /include
-  - /lib/pkgconfig
-  - /man
-  - /share/doc
-  - /share/gtk-docw
-  - /share/man
-  - /share/pkgconfig
-  - '*.la'
-  - '*.a'
 modules:
   - name: python3-requests
     buildsystem: simple
