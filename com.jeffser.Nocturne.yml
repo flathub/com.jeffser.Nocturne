@@ -119,5 +119,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Jeffser/Nocturne.git
-        tag: 1.1.1
-        commit: 74f1420a9a2171e48440686f083720ba49a554aa
+        tag: 1.2.0
+        commit: 1045c5366e44f2d42a6858a1f7e0716d4101cd55
