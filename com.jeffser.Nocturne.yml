@@ -10,7 +10,6 @@ finish-args:
   - '--device=dri'
   - '--socket=wayland'
   - '--socket=pulseaudio'
-  - '--filesystem=xdg-music:ro'
 cleanup:
   - /include
   - /lib/pkgconfig
@@ -119,5 +118,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Jeffser/Nocturne.git
-        tag: 1.3.2
-        commit: f661830067171ef1e13364a9bbaa64c5c517c796
+        tag: 1.4.0
+        commit: 3b001e879b8fed0d810f76f4f75f21e240b78d09
