@@ -112,11 +112,23 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/ce/34/d50e338631baaf65ec5396e70085e5de0b52b24b28db1ffbc1c6e82190dc/tinytag-2.2.1-py3-none-any.whl
         sha256: ed8b1e6d25367937e3321e054f4974f9abfde1a3e0a538824c87da377130c2b6
+  - name: libportal
+    buildsystem: meson
+    builddir: true
+    config-opts:
+      - -Ddocs=false
+      - -Dtests=false
+      - -Dvapi=false
+    sources:
+      - type: git
+        url: https://github.com/flatpak/libportal.git
+        tag: 0.10.0
+        commit: c23024018c8eb076549a1517fcb2d7f80d3e2ed5
   - name: nocturne
     builddir: true
     buildsystem: meson
     sources:
       - type: git
         url: https://github.com/Jeffser/Nocturne.git
-        tag: 1.4.3
-        commit: 97b33270f820ae80d59787b5246b9e322d4f1c8a
+        tag: 1.5.0
+        commit: c4f97b783b55bff6e42a70eec844ee07adb47a36
